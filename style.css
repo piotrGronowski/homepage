@@ -1,0 +1,31 @@
+body { background: #002A32;
+
+}
+h1 {
+    color: rgb(231, 93, 14);
+}
+h2 {
+    color: #FF8360;
+}
+a {
+    color: rgb(0, 72, 139);
+    margin-right: 10px;
+}
+footer {
+    font-style: italic;
+    color: gray;
+}
+nav {
+    background-color: #95BF74;
+    font-weight: bold;
+    
+}
+.h3 {
+    color:#FF8660
+}
+.link-describe{
+    color:#C5E053;
+}
+strong {
+    color:#C5E053;
+}
