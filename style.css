@@ -1,31 +1,31 @@
-body { background: #002A32;
-
+body {
+  background: #002a32;
 }
 h1 {
-    color: rgb(231, 93, 14);
+  color: rgb(231, 93, 14);
 }
 h2 {
-    color: #FF8360;
+  color: #ff8360;
 }
 a {
-    color: rgb(0, 72, 139);
-    margin-right: 10px;
+  color: rgb(0, 72, 139);
+  margin-right: 10px;
 }
 footer {
-    font-style: italic;
-    color: gray;
+  font-style: italic;
+  color: gray;
 }
 nav {
-    background-color: #95BF74;
-    font-weight: bold;
-    
+  background-color: #95bf74;
+  font-weight: bold;
 }
 .h3 {
-    color:#FF8660
+  color: #ff8660;
+  margin-bottom: 0;
 }
-.link-describe{
-    color:#C5E053;
+.link-describe {
+  color: #c5e053;
 }
 strong {
-    color:#C5E053;
+  color: #c5e053;
 }
