@@ -1,6 +1,25 @@
 body {
   background: #002a32;
 }
+.main{
+  max-width: 1050px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Opisuje stopkę */
+.footer {
+  font-style: italic;
+  color: gray;
+  position: fixed;
+  bottom: 0px;
+}
+
+
+
+
+
+
 h1 {
   color: rgb(231, 93, 14);
 }
@@ -11,13 +30,17 @@ a {
   color: rgb(0, 72, 139);
   margin-right: 10px;
 }
-footer {
-  font-style: italic;
-  color: gray;
-}
-nav {
+
+.navigation {
   background-color: #95bf74;
   font-weight: bold;
+  position: fixed;
+  
+}
+.navigation--weeks{
+  
+  right: 10px;
+  top: 30px;
 }
 .h3 {
   color: #ff8660;
@@ -28,4 +51,11 @@ nav {
 }
 strong {
   color: #c5e053;
+}
+ul{
+  list-style-type: none;
+}
+.index__week {
+  display: block;
+  
 }
