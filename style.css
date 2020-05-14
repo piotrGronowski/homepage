@@ -1,10 +1,12 @@
+/* style działające w całym dokumencie */
+
 body {
-  background: #002a32;
+  background: #090b79;
 }
 .main{
   max-width: 1050px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: hidden;  /* przycina obrazek do rozmiaru - kiedyś go w skali dopasuję */
 }
 
 /* Opisuje stopkę */
@@ -12,17 +14,54 @@ body {
   font-style: italic;
   color: gray;
   position: fixed;
-  bottom: 0px;
+  bottom: 10px;
 }
+/* Stylowanie linków w górnym menu*/
+.links {
+  background-color: #95bf74;
+  font-weight: bold;
+  position: fixed;
+  
+}
+/* Stylowanie w pojedynczych plikach */
 
-
-
-
-
-
-h1 {
+/* Stylowanie odwołań do tygodni(menu boczne) w pliku index.html*/
+.index__navigation{
+  background-color: #95bf74;
+  font-weight: bold;
+  position: fixed;
+  right: 10px;
+  top: 30px;
+}
+.index__week {
+  display: block; 
+}
+.index__h1 {
   color: rgb(231, 93, 14);
 }
+/* Stylowanie wpisów codziennych w pliku index.html */
+.week-even{
+  background-color: #b1ccda;
+}
+.week-odd{
+  background-color: #67c7fb;
+}
+
+/* Stylowanie linków w pliku linki.html */
+.link__describe {
+  color: #c5e053;
+}
+.link{
+  list-style-type: none;
+}
+
+
+
+
+
+
+
+
 h2 {
   color: #ff8360;
 }
@@ -31,31 +70,14 @@ a {
   margin-right: 10px;
 }
 
-.navigation {
-  background-color: #95bf74;
-  font-weight: bold;
-  position: fixed;
-  
-}
-.navigation--weeks{
-  
-  right: 10px;
-  top: 30px;
-}
+
+
 .h3 {
   color: #ff8660;
   margin-bottom: 0;
 }
-.link-describe {
-  color: #c5e053;
-}
+
 strong {
   color: #c5e053;
 }
-ul{
-  list-style-type: none;
-}
-.index__week {
-  display: block;
-  
-}
+

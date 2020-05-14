@@ -9,21 +9,21 @@
   </head>
 
   <body>
-    <header class="header links">+
-      <nav class="navigation">
-        <a href="index.html">Strona główna</a>
-        <a href="html.html">HTML</a>
-        <a href="css.html">CSS</a>
-        <a href="javaScript.html">JavaScript</a>
-        <a href="vsc_skroty.html">VSC obsługa</a>
-        <a href="linki.html">Linki</a>
+    <header class="links">
+      <nav class="links__navigation">
+        <a class="links__link" href="index.html">Strona główna</a>
+        <a class="links__link" href="html.html">HTML</a>
+        <a class="links__link" href="css.html">CSS</a>
+        <a class="links__link" href="javaScript.html">JavaScript</a>
+        <a class="links__link" href="vsc_skroty.html">VSC obsługa</a>
+        <a class="links__link" href="linki.html">Linki</a>
       </nav>
     </header>
     <main class="main">
-      <header class="header index__header">
+      <header class="index">
         <h1 class="index__h1">13 tygodniowy program nauki frontendu</h1>
         <img class="index__image" src="pictures/krajobraz.jpg" alt="Sielski krajobraz" />
-        <nav class="navigation navigation--weeks">
+        <nav class="index__navigation">
           <a class="index__week" href="#t1">Tydzień1</a>
           <a class="index__week" href="#t2">Tydzień2</a>
           <a class="index__week" href="#t3">Tydzień3</a>
@@ -39,8 +39,8 @@
           <a class="index__week" href="#t13">Tydzień13</a>
         </nav>
       </header>
-      <section>
-        <h2 id="t1">Tydzień 1</h2>
+      <section class="week week-odd">
+        <h2 class="week__header"id="t1">Tydzień 1</h2>
         <article>
           <h3 class="h3">Instaluję programy, których bedę używał</h3>
           <ul>
@@ -64,7 +64,7 @@
           </p>
         </article>
       </section>
-      <section>
+      <section class="week week-even">
         <h2 id="t2">Tydzień 2</h2>
         <p>warstwy strony</p>
         <p>Podstaawy HTML i CSS</p>
@@ -72,8 +72,8 @@
           sprawdzenie poprawności strony - link ma się otwierać w nowej karcie
         </p>
       </section>
-      <section>
-        <h2 id="t3">Tydzień 3</h2>
+      <section class="week week-odd">
+        <h2  id="t3">Tydzień 3</h2>
         <article>
           <h3 class="h3">Poniedziałek</h3>
           <p>
@@ -124,8 +124,8 @@
           </p>
         </article>
       </section>
-      <section>
-        <h2 id="t4">Tydzień 4</h2>
+      <section class="week week-even">
+        <h2  id="t4">Tydzień 4</h2>
         <article>
           <h3 class="h3">Poniedziałek</h3>
           <p>Jestem na gitHubie</p>
@@ -170,7 +170,7 @@
         </article>
       </section>
       <section>
-        <h2 id="t5">Tydzień 5</h2>
+        <h2 class="week week-odd" id="t5">Tydzień 5</h2>
         <article>
           <h3 class="h3">Poniedziałek</h3>
           <p>Walczę z 4 tygodniem. Zmieniam strukturę strony</p>
@@ -182,7 +182,8 @@
         </article>
         <article>
           <h3 class="h3">Środa</h3>
-          <p>Trzeba skończyć tydzień czwarty. Choćbym miał pracować 10-lat plan 3-letni wykonam.</p>
+          <p>Trzeba skończyć tydzień czwarty. Choćbym miał pracować 10-lat plan 3-letni wykonam. Długo to idzie i mozolnie strasznie</p>
+          <p>Nie wiem jak się to ma do BEM-a ale i tak wprowadziłem trochę porządku do projektu.</p>
         </article>
         <article>
           <h3 class="h3">Czwartek</h3>
@@ -202,7 +203,7 @@
         </article>
       </section>
       <section>
-        <h2 id="t6">Tydzień 6</h2>
+        <h2 class="week week-even" id="t6">Tydzień 6</h2>
         <article>
           <h3 class="h3">Poniedziałek</h3>
           <p></p>
@@ -234,7 +235,7 @@
         </article>
       </section>
       <section>
-        <h2 id="t7">Tydzień 7</h2>
+        <h2 class="week week-odd" id="t7">Tydzień 7</h2>
         <article>
           <h3 class="h3">Poniedziałek</h3>
           <p></p>
@@ -266,7 +267,7 @@
         </article>
       </section>
       <section>
-        <h2 id="t8">Tydzień 8</h2>
+        <h2 class="week week-even" id="t8">Tydzień 8</h2>
         <article>
           <h3 class="h3">Poniedziałek</h3>
           <p></p>
@@ -298,7 +299,7 @@
         </article>
       </section>
       <section>
-        <h2 id="t9">Tydzień 9</h2>
+        <h2 class="week week-odd" id="t9">Tydzień 9</h2>
         <article>
           <h3 class="h3">Poniedziałek</h3>
           <p></p>
@@ -330,7 +331,7 @@
         </article>
       </section>
       <section>
-        <h2 id="t10">Tydzień 10</h2>
+        <h2 class="week week-even" id="t10">Tydzień 10</h2>
         <article>
           <h3 class="h3">Poniedziałek</h3>
           <p></p>
@@ -362,7 +363,7 @@
         </article>
       </section>
       <section>
-        <h2 id="t11">Tydzień 11</h2>
+        <h2 class="week week-odd" id="t11">Tydzień 11</h2>
         <article>
           <h3 class="h3">Poniedziałek</h3>
           <p></p>
@@ -394,7 +395,7 @@
         </article>
       </section>
       <section>
-        <h2 id="t12">Tydzień 12</h2>
+        <h2 class="week week-even" id="t12">Tydzień 12</h2>
         <article>
           <h3 class="h3">Poniedziałek</h3>
           <p></p>
@@ -426,7 +427,7 @@
         </article>
       </section>
       <section>
-        <h2 id="t13">Tydzień 13</h2>
+        <h2 class="week week-odd" id="t13">Tydzień 13</h2>
         <article>
           <h3 class="h3">Poniedziałek</h3>
           <p></p>
