@@ -10,7 +10,7 @@
 
   <body>
     <header class="links">
-      <nav class="links__navigation">
+      <nav class="links__navigation navigation--js">
         <a class="links__link" href="index.html">Strona główna</a>
         <a class="links__link" href="html.html">HTML</a>
         <a class="links__link" href="css.html">CSS</a>
@@ -18,12 +18,22 @@
         <a class="links__link" href="vsc_skroty.html">VSC obsługa</a>
         <a class="links__link" href="linki.html">Linki</a>
       </nav>
+      <button class="hamburger hamburger--js" aria-label="otwórz menu">
+        🍔
+      </button>
+      <button class="pizza pizza--js">🍕</button>
     </header>
     <main class="main">
       <header class="index">
         <h1 class="index__h1">13 tygodniowy program nauki frontendu</h1>
-        <img class="index__image" src="pictures/krajobraz.jpg" alt="Sielski krajobraz" />
-        <nav class="index__navigation">
+        <img
+          class="index__image"
+          src="pictures/krajobraz.jpg"
+          alt="Sielski krajobraz"
+        />
+        <nav
+          class="index__navigation index__navigation--js index__navigation-open"
+        >
           <a class="index__week" href="#t1">Tydzień1</a>
           <a class="index__week" href="#t2">Tydzień2</a>
           <a class="index__week" href="#t3">Tydzień3</a>
@@ -39,10 +49,11 @@
           <a class="index__week" href="#t13">Tydzień13</a>
         </nav>
       </header>
-      <section class="week week-odd">
-        <h2 class="week__header"id="t1">Tydzień 1</h2>
+      <!-- <div class="week"> -->
+      <section class="week__odd week__odd-t1">
+        <h2 class="week__header" id="t1">Tydzień 1</h2>
         <article>
-          <h3 class="h3">Instaluję programy, których bedę używał</h3>
+          <h3 class="day__name">Instaluję programy, których bedę używał</h3>
           <ul>
             <li>Chrome</li>
             <li>
@@ -53,38 +64,38 @@
           </ul>
         </article>
         <article>
-          <h3 class="h3">Przemyślenia</h3>
-          <p>
+          <h3 class="day__name">Przemyślenia</h3>
+          <p class="day__describe">
             Tydzień się kończy, niewiele tu zrobiłem.Slack mi nie leży na razie
             ,ale ludzie są całkiem nakręceni, co się udziela.
           </p>
-          <p>
+          <p class="day__describe">
             Dopiszę tutaj skróty i inne przydatne rzeczy np. trochę o kolorach w
             internetach
           </p>
         </article>
       </section>
-      <section class="week week-even">
-        <h2 id="t2">Tydzień 2</h2>
+      <section class="week__even week__even-t2">
+        <h2 class="week__header" id="t2">Tydzień 2</h2>
         <p>warstwy strony</p>
         <p>Podstaawy HTML i CSS</p>
         <p>
           sprawdzenie poprawności strony - link ma się otwierać w nowej karcie
         </p>
       </section>
-      <section class="week week-odd">
-        <h2  id="t3">Tydzień 3</h2>
-        <article>
-          <h3 class="h3">Poniedziałek</h3>
-          <p>
+      <section class="week__odd week__odd-t3">
+        <h2 class="week__number" id="t3">Tydzień 3</h2>
+        <article class="day">
+          <h3 class="day__name">Poniedziałek</h3>
+          <p class="day__describe">
             Oglądam filmy i robię zadania. Dużo do modyfikacji na
             stronie.najpierw struktura html i wklepanie zawaertości a później
             ostylowanie CSS
           </p>
         </article>
-        <article>
-          <h3 class="h3">Wtorek</h3>
-          <p>
+        <article class="day">
+          <h3 class="day__name">Wtorek</h3>
+          <p class="day__describe">
             Niektórzy ludzie wykraczają poza obecny materiał. Trochę
             zazdroszczę, ale nie bedę na siłę pchał bajerów.Roboty mi wystarczy
             z treścią ,która chcę wprowadzić.
@@ -92,377 +103,403 @@
           <p>Chyba kupię sobie ukulele.</p>
         </article>
         <article>
-          <h3 class="h3">Środa</h3>
-          <p>
+          <h3 class="day__name">Środa</h3>
+          <p class="day__describe">
             Drogi pamiętniczku.Niezły blog mi się tu zrobił.Jak będę wklepywał
             materiał w tym tempie ,to do końca kursu niezła strona powstanie.
             Przywitanie js zaczęło mnie w******ć, więc je zakomentowałem(ciekawe
             czy takie słowo istnieje?).
           </p>
-          <p>
-            Dużo materiału jest ze Slacka.Wkleję krajobraz na główną.Nie
-            dopasował się - ogarnę to później
+          <p class="day__describe">
+            Dużo materiału jest ze Slacka.Wkleję krajobraz na główną. dopasował
+            się - ogarnę to później
           </p>
         </article>
         <article>
-          <h3 class="h3">Czwartek</h3>
+          <h3 class="day__name">Czwartek</h3>
           <p>Mam lenia i nic nie robię, albo i robię</p>
         </article>
         <article>
-          <h3 class="h3">Piątek</h3>
+          <h3 class="day__name">Piątek</h3>
           <p>oglądam różne filmiki szkoleniowe</p>
         </article>
         <article>
-          <h3 class="h3">Sobota</h3>
+          <h3 class="day__name">Sobota</h3>
           <p>Takie tam ,bez spiny</p>
         </article>
         <article>
-          <h3 class="h3">Niedziela</h3>
+          <h3 class="day__name">Niedziela</h3>
           <p>
             Czekam z niecierpliwością na kolejne zad.domowe. Nauczyciele z
             liceum doznaliby szoku
           </p>
         </article>
       </section>
-      <section class="week week-even">
-        <h2  id="t4">Tydzień 4</h2>
+      <section class="week__even week__even-t4">
+        <h2 id="t4">Tydzień 4</h2>
         <article>
-          <h3 class="h3">Poniedziałek</h3>
+          <h3 class="day__name">Poniedziałek</h3>
           <p>Jestem na gitHubie</p>
         </article>
         <article>
-          <h3 class="h3">Wtorek</h3>
+          <h3 class="day__name">Wtorek</h3>
           <p>
             Dwa dni szukałem rozwiązania,czemu nie działa interpolacja.4
             reinstale VSC.Znalazłem na Stacu ,że backquotes to nie poj.apostrof.
           </p>
           <p>
-            Oglądam filmik WTF i tam z najazdem zaprezentowane.A ja kurka tego nie
-            pamiętam.
+            Oglądam filmik WTF i tam z najazdem zaprezentowane.A ja kurka tego
+            nie pamiętam.
           </p>
         </article>
         <article>
-          <h3 class="h3">Środa</h3>
+          <h3 class="day__name">Środa</h3>
           <p>Muszę przerobić pamiętniczek z section -article na ul-li</p>
         </article>
         <article>
-          <h3 class="h3">Czwartek</h3>
+          <h3 class="day__name">Czwartek</h3>
           <p>
             Trzeba poustawiać pudełka na stronie.Może zrobię menu.Ogólnie trzeba
             pokombinować.
           </p>
         </article>
         <article>
-          <h3 class="h3"><p>Piątek</p></h3>
+          <h3 class="day__name"><p>Piątek</p></h3>
           <small>May 8, 2020</small>
           <p>Nowy laptop mam . Instalacja i konfiguracja i kombinacja</p>
         </article>
         <article>
-          <h3 class="h3">Sobota</h3>
+          <h3 class="day__name">Sobota</h3>
           <small>May 9, 2020</small>
-          <p>Na razie zostawię taki układ, bo Kucharz też tak ma. Ma tam link do artykułu.Sprawdzę inne blogi jak to robią.Trzeba też trochę pogrzebać w CSS-ie. </p>
-          <P>Chyba się dzisiaj nie wyrobię z zadaniami. Jeszcze gita na dwóch kompach muszę pomęczyć.</P>
+          <p>
+            Na razie zostawię taki układ, bo Kucharz też tak ma. Ma tam link do
+            artykułu.Sprawdzę inne blogi jak to robią.Trzeba też trochę
+            pogrzebać w CSS-ie.
+          </p>
+          <p>
+            Chyba się dzisiaj nie wyrobię z zadaniami. Jeszcze gita na dwóch
+            kompach muszę pomęczyć.
+          </p>
         </article>
         <article>
-          <h3 class="h3">Niedziela</h3>
+          <h3 class="day__name">Niedziela</h3>
           <small>May 10, 2020</small>
           <p>Zabawa z Gitem. Próbuje pulla.</p>
         </article>
       </section>
-      <section>
-        <h2 class="week week-odd" id="t5">Tydzień 5</h2>
+      <section class="week__odd week__odd-t5">
+        <h2 id="t5">Tydzień 5</h2>
         <article>
-          <h3 class="h3">Poniedziałek</h3>
+          <h3 class="day__name">Poniedziałek</h3>
           <p>Walczę z 4 tygodniem. Zmieniam strukturę strony</p>
         </article>
         <article>
-          <h3 class="h3">Wtorek</h3>
+          <h3 class="day__name">Wtorek</h3>
           <p>Bem-a pamięci rapsod żałobny</p>
-          <p>Jednak wymyślanie nazw jest trudne.Tworzenie tylu klas jest na razie bez sensu.Ale pewnie później się przyda.Html nie wyrzuca błędu pustej klasy a w pliku CSS tak </p>
+          <p>
+            Jednak wymyślanie nazw jest trudne.Tworzenie tylu klas jest na razie
+            bez sensu.Ale pewnie później się przyda.Html nie wyrzuca błędu
+            pustej klasy a w pliku CSS tak
+          </p>
         </article>
         <article>
-          <h3 class="h3">Środa</h3>
-          <p>Trzeba skończyć tydzień czwarty. Choćbym miał pracować 10-lat plan 3-letni wykonam. Długo to idzie i mozolnie strasznie</p>
-          <p>Nie wiem jak się to ma do BEM-a ale i tak wprowadziłem trochę porządku do projektu.</p>
+          <h3 class="day__name">Środa</h3>
+          <p>
+            Trzeba skończyć tydzień czwarty. Choćbym miał pracować 10-lat plan
+            3-letni wykonam. Długo to idzie i mozolnie strasznie
+          </p>
+          <p>
+            Nie wiem jak się to ma do BEM-a ale i tak wprowadziłem trochę
+            porządku do projektu.
+          </p>
         </article>
         <article>
-          <h3 class="h3">Czwartek</h3>
+          <h3 class="day__name">Czwartek</h3>
+          <p>Wpis nie został uzupełniony, a nie chce mi się wymyślać</p>
+        </article>
+        <article>
+          <h3 class="day__name">Piątek</h3>
+          <p>Wpis nie został uzupełniony, a nie chce mi się wymyślać</p>
+        </article>
+        <article>
+          <h3 class="day__name">Sobota</h3>
+          <p>Wpis nie został uzupełniony, a nie chce mi się wymyślać</p>
+        </article>
+        <article>
+          <h3 class="day__name">Niedziela</h3>
+          <p>Wpis nie został uzupełniony, a nie chce mi się wymyślać</p>
+        </article>
+      </section>
+      <section class="week__even week__even-t6">
+        <h2 id="t6">Tydzień 6</h2>
+        <article>
+          <h3 class="day__name">Poniedziałek</h3>
+          <p>Wpis nie został uzupełniony, a nie chce mi się wymyślać</p>
+        </article>
+        <article>
+          <h3 class="day__name">Wtorek</h3>
+          <p>Wpis nie został uzupełniony, a nie chce mi się wymyślać</p>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Piątek</h3>
+          <h3 class="day__name">Środa</h3>
+          <p>Wpis nie został uzupełniony, a nie chce mi się wymyślać</p>
+        </article>
+        <article>
+          <h3 class="day__name">Czwartek</h3>
+          <p>Wpis nie został uzupełniony, a nie chce mi się wymyślać</p>
+        </article>
+        <article>
+          <h3 class="day__name">Piątek</h3>
+          <p></p>
+        </article>
+        Wpis nie został uzupełniony, a nie chce mi się wymyślać
+        <article>
+          <h3 class="day__name">Sobota</h3>
+          <p>Wpis nie został uzupełniony, a nie chce mi się wymyślać</p>
+        </article>
+        <article>
+          <h3 class="day__name">Niedziela</h3>
+          <p>Wpis nie został uzupełniony, a nie chce mi się wymyślać</p>
+          <p>Witcher tu zawinił</p>
+        </article>
+      </section>
+      <section class="week__odd week__odd-t7">
+        <h2 id="t7">Tydzień 7</h2>
+        <article>
+          <h3 class="day__name">Poniedziałek</h3>
+          <p>
+            Nie dokończyłem 6-tego a zaczynam filmiki oglądać. Został mi burger
+            i grid. Czyli zrobiłem to co najłatwiejsze.
+          </p>
+        </article>
+        <article>
+          <h3 class="day__name">Wtorek</h3>
+          <p>połowa filmików obejrzana.do zadań brak chęci.</p>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Sobota</h3>
-          <p></p>
+          <h3 class="day__name">Środa</h3>
+          <p>Wszyscy mają zaległości,mam i ja.</p>
         </article>
         <article>
-          <h3 class="h3">Niedziela</h3>
+          <h3 class="day__name">Czwartek</h3>
+          <p>Obejrzana reszta filmików i zrobione notatki</p>
+        </article>
+        <article>
+          <h3 class="day__name">Piątek</h3>
+          <p>Aktualizacja trello i trochę ruszyłem formularze</p>
+        </article>
+        <article>
+          <h3 class="day__name">Sobota</h3>
+          <p>Dzisiaj będę pracował solidnie. Trochę nadgonię.</p>
+        </article>
+        <article>
+          <h3 class="day__name">Niedziela</h3>
           <p></p>
         </article>
       </section>
-      <section>
-        <h2 class="week week-even" id="t6">Tydzień 6</h2>
+      <section class="week__even week__even-t8">
+        <h2 id="t8">Tydzień 8</h2>
         <article>
-          <h3 class="h3">Poniedziałek</h3>
-          <p></p>
+          <h3 class="day__name">Poniedziałek</h3>
+          <p>Dzień dziecka. Rodzice postawili flaszkę</p>
         </article>
         <article>
-          <h3 class="h3">Wtorek</h3>
-          <p></p>
-          <p></p>
+          <h3 class="day__name">Wtorek</h3>
+          <p>Boli mnie głowa</p>
+          <p>Na nic nie mam ochoty</p>
         </article>
         <article>
-          <h3 class="h3">Środa</h3>
-          <p></p>
+          <h3 class="day__name">Środa</h3>
+          <p>
+            Męczę formularze. Dużo tego.Zrobiłem osobny projekt.Dodam style
+            neumorfizm??
+          </p>
         </article>
         <article>
-          <h3 class="h3">Czwartek</h3>
-          <p></p>
+          <h3 class="day__name">Czwartek</h3>
+          <p>Ogarniam grida</p>
         </article>
         <article>
-          <h3 class="h3">Piątek</h3>
-          <p></p>
+          <h3 class="day__name">Piątek</h3>
+          <p>Dalej ogarniam grida i już coś zaczyna wychodzić</p>
         </article>
         <article>
-          <h3 class="h3">Sobota</h3>
-          <p></p>
+          <h3 class="day__name">Sobota</h3>
+          <p>Zrobiłem hamburgera.Bolało</p>
         </article>
         <article>
-          <h3 class="h3">Niedziela</h3>
-          <p></p>
-        </article>
-      </section>
-      <section>
-        <h2 class="week week-odd" id="t7">Tydzień 7</h2>
-        <article>
-          <h3 class="h3">Poniedziałek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Wtorek</h3>
-          <p></p>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Środa</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Czwartek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Piątek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Sobota</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Niedziela</h3>
+          <h3 class="day__name">Niedziela</h3>
           <p></p>
         </article>
       </section>
-      <section>
-        <h2 class="week week-even" id="t8">Tydzień 8</h2>
+      <section class="week__odd week__odd-t9">
+        <h2 id="t9">Tydzień 9</h2>
         <article>
-          <h3 class="h3">Poniedziałek</h3>
+          <h3 class="day__name">Poniedziałek</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Wtorek</h3>
-          <p></p>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Środa</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Czwartek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Piątek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Sobota</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Niedziela</h3>
-          <p></p>
-        </article>
-      </section>
-      <section>
-        <h2 class="week week-odd" id="t9">Tydzień 9</h2>
-        <article>
-          <h3 class="h3">Poniedziałek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Wtorek</h3>
+          <h3 class="day__name">Wtorek</h3>
           <p></p>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Środa</h3>
+          <h3 class="day__name">Środa</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Czwartek</h3>
+          <h3 class="day__name">Czwartek</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Piątek</h3>
+          <h3 class="day__name">Piątek</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Sobota</h3>
+          <h3 class="day__name">Sobota</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Niedziela</h3>
+          <h3 class="day__name">Niedziela</h3>
           <p></p>
         </article>
       </section>
-      <section>
-        <h2 class="week week-even" id="t10">Tydzień 10</h2>
+      <section class="week__even week__even-t10">
+        <h2 id="t10">Tydzień 10</h2>
         <article>
-          <h3 class="h3">Poniedziałek</h3>
+          <h3 class="day__name">Poniedziałek</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Wtorek</h3>
-          <p></p>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Środa</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Czwartek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Piątek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Sobota</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Niedziela</h3>
-          <p></p>
-        </article>
-      </section>
-      <section>
-        <h2 class="week week-odd" id="t11">Tydzień 11</h2>
-        <article>
-          <h3 class="h3">Poniedziałek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Wtorek</h3>
+          <h3 class="day__name">Wtorek</h3>
           <p></p>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Środa</h3>
+          <h3 class="day__name">Środa</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Czwartek</h3>
+          <h3 class="day__name">Czwartek</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Piątek</h3>
+          <h3 class="day__name">Piątek</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Sobota</h3>
+          <h3 class="day__name">Sobota</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Niedziela</h3>
+          <h3 class="day__name">Niedziela</h3>
           <p></p>
         </article>
       </section>
-      <section>
-        <h2 class="week week-even" id="t12">Tydzień 12</h2>
+      <section class="week__odd week__odd-t11">
+        <h2 x id="t11">Tydzień 11</h2>
         <article>
-          <h3 class="h3">Poniedziałek</h3>
+          <h3 class="day__name">Poniedziałek</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Wtorek</h3>
-          <p></p>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Środa</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Czwartek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Piątek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Sobota</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Niedziela</h3>
-          <p></p>
-        </article>
-      </section>
-      <section>
-        <h2 class="week week-odd" id="t13">Tydzień 13</h2>
-        <article>
-          <h3 class="h3">Poniedziałek</h3>
-          <p></p>
-        </article>
-        <article>
-          <h3 class="h3">Wtorek</h3>
+          <h3 class="day__name">Wtorek</h3>
           <p></p>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Środa</h3>
+          <h3 class="day__name">Środa</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Czwartek</h3>
+          <h3 class="day__name">Czwartek</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Piątek</h3>
+          <h3 class="day__name">Piątek</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Sobota</h3>
+          <h3 class="day__name">Sobota</h3>
           <p></p>
         </article>
         <article>
-          <h3 class="h3">Niedziela</h3>
+          <h3 class="day__name">Niedziela</h3>
           <p></p>
         </article>
       </section>
-      
+      <section class="week__even week__even-t12">
+        <h2 id="t12">Tydzień 12</h2>
+        <article>
+          <h3 class="day__name">Poniedziałek</h3>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Wtorek</h3>
+          <p></p>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Środa</h3>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Czwartek</h3>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Piątek</h3>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Sobota</h3>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Niedziela</h3>
+          <p></p>
+        </article>
+      </section>
+      <section class="week__odd week__odd-t13">
+        <h2 id="t13">Tydzień 13</h2>
+        <article>
+          <h3 class="day__name">Poniedziałek</h3>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Wtorek</h3>
+          <p></p>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Środa</h3>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Czwartek</h3>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Piątek</h3>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Sobota</h3>
+          <p></p>
+        </article>
+        <article>
+          <h3 class="day__name">Niedziela</h3>
+          <p></p>
+        </article>
+      </section>
+      <section class="week__even week__even-t14"></section>
+      <!-- </div> -->
     </main>
     <footer class="footer">
       Strona testowa Piotra wykonana w ramach WTF <a href="#t1">Na górę</a>
     </footer>
-    <!-- <script src="main.js" ></script> -->
+    <script src="main.js"></script>
   </body>
 </html>

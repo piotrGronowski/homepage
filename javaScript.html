@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>JavaScript</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="html.html">HTML</a>
-            <a href="css.html">CSS</a>
-            <a href="javaScript.html">JavaScript</a>
-            <a href="vsc_skroty.html">VSC obsługa</a>
-            <a href="linki.html">Linki</a>
-            
+  </head>
+  <body>
+    <header class="links">
+        <nav class="links__navigation">
+          <a class="links__link" href="index.html">Strona główna</a>
+          <a class="links__link" href="html.html">HTML</a>
+          <a class="links__link" href="css.html">CSS</a>
+          <a class="links__link" href="javaScript.html">JavaScript</a>
+          <a class="links__link" href="vsc_skroty.html">VSC obsługa</a>
+          <a class="links__link" href="linki.html">Linki</a>
         </nav>
-    </header>
+      </header>
     
-</body>
+    <main class="main">
+        <!-- Ten schemat będzie się powtarzał w css,html i javascripcie -->
+        <article class="feature">
+            <h3 class="feature__theme"></h3>
+            <p class="feature__describe"></p>
+        </article>
+        <article class="feature">
+            <h3 class="feature__theme"></h3>
+            <p class="feature__describe"></p>
+        </article>
+    </main>
+    <footer class="footer">
+        Strona testowa Piotra wykonana/masakrowana w ramach WTF
+      </footer>
+      <script src="main.js"></script>
+  </body>
 </html>
