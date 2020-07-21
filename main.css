@@ -8,7 +8,10 @@ body {
 .main {
   display: grid;
   grid-template-areas: ". index index ." ". week__odd-t1 week__even-t2 . " ". week__odd-t3 week__even-t4 . " ". week__odd-t5 week__even-t6 . " ". week__odd-t7 week__even-t8 . " ". week__odd-t9 week__even-t10 . " ". week__odd-t11 week__even-t12 . " ". week__odd-t13 week__even-t14 . " "footer footer footer footer";
-  grid-template-columns: 1fr 525px 525px 1fr; }
+  grid-template-columns: 1fr 525px 525px 1fr;
+  /* max-width: 1050px;
+  margin: 0 auto;
+  overflow: hidden; */ }
 
 .week__odd-t1 {
   grid-area: week__odd-t1; }
@@ -65,36 +68,43 @@ body {
   background-color: #95bf74;
   font-weight: bold;
   min-height: 60px; }
-  .links__navigation {
-    position: fixed;
-    background-color: #95bf74; }
+
+.links__navigation {
+  position: fixed;
+  background-color: #95bf74; }
 
 /* stylowanie w article w plikach html.html,css.html,javaScript.html */
 .feature {
   background-color: aliceblue; }
-  .feature__theme {
-    color: #ff8660;
-    margin-bottom: 0; }
-  .feature__describe {
-    padding-bottom: 10px; }
+
+.feature__theme {
+  color: #ff8660;
+  margin-bottom: 0; }
+
+.feature__describe {
+  padding-bottom: 10px; }
 
 /* Stylowanie w pojedynczych plikach */
 /* Stylowanie odwołań do tygodni(menu boczne) w pliku index.html*/
 .index {
   grid-area: index; }
-  .index__navigation {
-    background-color: #95bf74;
-    font-weight: bold;
-    position: fixed;
-    right: 10px;
-    top: 30px; }
-  .index__week {
-    display: block; }
-  .index__h1 {
-    color: #e75d0e; }
-  .index__image {
-    max-width: 100%;
-    height: auto; }
+
+.index__navigation {
+  background-color: #95bf74;
+  font-weight: bold;
+  position: fixed;
+  right: 10px;
+  top: 30px; }
+
+.index__week {
+  display: block; }
+
+.index__h1 {
+  color: #e75d0e; }
+
+.index__image {
+  max-width: 100%;
+  height: auto; }
 
 /* Stylowanie wpisów codziennych w pliku index.html */
 .week__even {

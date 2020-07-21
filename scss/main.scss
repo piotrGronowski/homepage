@@ -1,0 +1,220 @@
+/* style działające w całym dokumencie */
+
+body {
+  margin: 0;
+  background: rgb(101, 155, 94);
+  background: linear-gradient(
+    90deg,
+    rgba(101, 155, 94, 1) 0%,
+    rgba(149, 191, 84, 1) 47%,
+    rgba(197, 224, 99, 1) 100%
+  );
+}
+.main {
+  display: grid;
+  grid-template-areas:
+    ". index index ."
+    ". week__odd-t1 week__even-t2 . "
+    ". week__odd-t3 week__even-t4 . "
+    ". week__odd-t5 week__even-t6 . "
+    ". week__odd-t7 week__even-t8 . "
+    ". week__odd-t9 week__even-t10 . "
+    ". week__odd-t11 week__even-t12 . "
+    ". week__odd-t13 week__even-t14 . "
+    "footer footer footer footer";
+  grid-template-columns: 1fr 525px 525px 1fr;
+}
+.week__odd-t1 {
+  grid-area: week__odd-t1;
+}
+.week__even-t2 {
+  grid-area: week__even-t2;
+}
+.week__odd-t3 {
+  grid-area: week__odd-t3;
+}
+.week__even-t4 {
+  grid-area: week__even-t4;
+}
+.week__odd-t5 {
+  grid-area: week__odd-t5;
+}
+.week__even-t6 {
+  grid-area: week__even-t6;
+}
+.week__odd-t7 {
+  grid-area: week__odd-t7;
+}
+.week__even-t8 {
+  grid-area: week__even-t8;
+}
+.week__odd-t9 {
+  grid-area: week__odd-t9;
+}
+.week__even-t10 {
+  grid-area: week__even-t10;
+}
+.week__odd-t11 {
+  grid-area: week__odd-t11;
+}
+.week__even-t12 {
+  grid-area: week__even-t12;
+}
+.week__odd-t13 {
+  grid-area: week__odd-t13;
+}
+.week__even-t14 {
+  grid-area: week__even-t14;
+}
+/* Opisuje stopkę */
+.footer {
+  grid-area: footer;
+  font-style: italic;
+  color: gray;
+  position: fixed;
+  bottom: 10px;
+}
+/* Stylowanie linków w górnym menu*/
+.links {
+  background-color: #95bf74;
+  font-weight: bold;
+  min-height: 60px;
+  &__navigation {
+    position: fixed;
+    background-color: #95bf74;
+  }
+}
+/* stylowanie w article w plikach html.html,css.html,javaScript.html */
+.feature {
+  background-color: aliceblue;
+  &__theme {
+    color: #ff8660;
+    margin-bottom: 0;
+  }
+  &__describe {
+    padding-bottom: 10px;
+  }
+}
+/* Stylowanie w pojedynczych plikach */
+
+/* Stylowanie odwołań do tygodni(menu boczne) w pliku index.html*/
+.index {
+  grid-area: index;
+  &__navigation {
+    background-color: #95bf74;
+    font-weight: bold;
+    position: fixed;
+    right: 10px;
+    top: 30px;
+  }
+  &__week {
+    display: block;
+  }
+  &__h1 {
+    color: rgb(231, 93, 14);
+  }
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* Stylowanie wpisów codziennych w pliku index.html */
+
+.week__even {
+  background-color: #b1ccda;
+  border: 3px solid red;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.week__odd {
+  background-color: #67c7fb;
+}
+.week__header {
+  margin-top: 0;
+}
+.day__name {
+  color: #ff8660;
+  margin-bottom: 0;
+}
+.day__describe {
+  margin-bottom: 0;
+}
+
+/* Stylowanie linków w pliku linki.html */
+.link__describe {
+  color: #c5e053;
+}
+.link {
+  list-style-type: none;
+}
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .body {
+    background-color: brown;
+  }
+  .index__navigation {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 321px) {
+  .pizza {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .links__navigation {
+    display: none;
+  }
+  .links__navigation-close {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #95bf74;
+    position: relative;
+  }
+  .main {
+    margin-top: 60px;
+    display: grid;
+    grid-template-areas:
+      "index"
+      "week__odd-t1"
+      "week__even-t2"
+      "week__odd-t3"
+      "week__even-t4"
+      "week__odd-t5 "
+      " week__even-t6"
+      "week__odd-t7"
+      " week__even-t8"
+      "week__odd-t9 "
+      "week__even-t10"
+      "week__odd-t11"
+      " week__even-t12"
+      "week__odd-t13 "
+      "week__even-t14"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+  .links {
+    background-color: #95bf74;
+    font-weight: bold;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .index__navigation {
+    display: none;
+  }
+  .index__navigation-open {
+    background-color: #95bf74;
+    font-weight: bold;
+    position: fixed;
+    right: 10px;
+    top: 30px;
+  }
+}
